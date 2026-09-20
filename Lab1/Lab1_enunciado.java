@@ -3,7 +3,7 @@ import com.fazecast.jSerialComm.SerialPort;
 /**
  * Laboratorio 1 - Colores RGB con un Arreglo
  *
- * El ESP32 ya tiene el firmware cargado (esp32/lab1_neopixel.py) y espera
+ * El ESP32 ya tiene el firmware cargado (firmware_esp32.py) y espera
  * recibir por el puerto serie una linea de texto con el formato "R,G,B\n"
  * (cada valor entre 0 y 255). Al recibirla, enciende el neopixel con ese color.
  *
