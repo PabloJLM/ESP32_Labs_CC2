@@ -19,25 +19,24 @@ public class Lab1 {
         
         Thread.sleep(2000);
 
-        // TODO 1: Declara aqui un arreglo de tamano fijo de 3 enteros llamado
-        // "color", que usaras para las 3 secciones de abajo (R = indice 0,
-        // G = indice 1, B = indice 2).
+        // 1: Declara aqui un array de tamano fijo de 3 enteros llamado
+        // "color" (debe seguir el orden RGB 0-1-2)
 
 
-        // TODO 2: Modifica "color" POR INDICE para que sea ROJO puro
+        // 2: Modifica "color" POR INDICE para que sea ROJO puro
         // (255, 0, 0) y envialo con enviarColor(puerto, color).
         // Despues espera 2000 ms con Thread.sleep antes de continuar.
 
 
-        // TODO 3: Modifica "color" POR INDICE (no declares un arreglo nuevo)
+        // 3: Modifica "color" POR INDICE (no declares un arreglo nuevo)
         // para que sea VERDE puro (0, 255, 0), envialo y espera 2000 ms.
 
 
-        // TODO 4: Modifica "color" POR INDICE para que sea AZUL puro
+        // 4: Modifica "color" POR INDICE para que sea AZUL puro
         // (0, 0, 255), envialo y espera 2000 ms.
 
 
-        // TODO 5: Elige un cuarto color de tu preferencia (por ejemplo una
+        // 5: Elige un cuarto color de tu preferencia (por ejemplo una
         // mezcla), modifica "color" por indice, envialo y espera 2000 ms.
 
 
@@ -47,9 +46,8 @@ public class Lab1 {
     }
 
     private static void enviarColor(SerialPort puerto, int[] color) {
-        // TODO 6: Arma un String con el formato "R,G,B\n" usando
-        // color[0], color[1] y color[2]. Reemplaza la linea de abajo.
-        String mensaje = null;
+        // 6: Arma un String con el formato "R,G,B\n" usando color[0], color[1] y color[2]
+        String mensaje = null; //Modifica aca 
 
         byte[] datos = mensaje.getBytes();
         puerto.writeBytes(datos, datos.length);

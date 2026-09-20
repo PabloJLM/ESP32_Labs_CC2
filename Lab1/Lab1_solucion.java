@@ -1,10 +1,9 @@
 import com.fazecast.jSerialComm.SerialPort;
 
-public class Lab1 {
+public class Lab1_solucion {
+    public static void main(String[] args) throws InterruptedException {//poner InterruptedException para evitar errores
 
-    public static void main(String[] args) throws InterruptedException {
-
-        String nombrePuerto = "COM3"; // <-- cambiar por el puerto real
+        String nombrePuerto = "COM23"; //puerto elegido
 
         SerialPort puerto = SerialPort.getCommPort(nombrePuerto);
         puerto.setComPortParameters(115200, 8, 1, SerialPort.NO_PARITY);
