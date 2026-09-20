@@ -1,23 +1,3 @@
-"""
-Laboratorio 1 - Colores RGB con un Arreglo
-Firmware ESP32 (MicroPython) - YA COMPLETO, no se modifica.
-
-Este script hace lo opuesto a los demas labs: en vez de enviar datos de un
-sensor, se queda ESPERANDO que Java le mande un color por el puerto serie
-y enciende un neopixel con ese color.
-
-Formato esperado, una linea de texto terminada en salto de linea:
-    R,G,B
-donde R, G y B son enteros entre 0 y 255. Ejemplo:
-    255,0,0
-
-Conexiones:
-- Neopixel: pin 25 (ya soldado en el shield Welcome Kit)
-- LED integrado: pin 2 (parpadea brevemente cada vez que recibe un color valido)
-
-Baudios: 115200
-"""
-
 from machine import Pin
 from neopixel import NeoPixel
 import sys

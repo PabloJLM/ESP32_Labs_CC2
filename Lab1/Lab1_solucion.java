@@ -1,9 +1,5 @@
 import com.fazecast.jSerialComm.SerialPort;
 
-/**
- * Laboratorio 1 - Colores RGB con un Arreglo
- * SOLUCION DE REFERENCIA (no se entrega al estudiante).
- */
 public class Lab1 {
 
     public static void main(String[] args) throws InterruptedException {
