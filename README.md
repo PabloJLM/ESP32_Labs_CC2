@@ -40,24 +40,12 @@ LabN/
 - Pines analógicos de sensores: se indican en la guía de cada lab 
 - Todos los scripts corren a **115200 baudios**.
 
-## Estado
-
-- [x] Lab 1 — Colores RGB con un Array (problema y solución listos)
-- [ ] Lab 2 — Estadísticas de un sensor analógico
-- [ ] Lab 3 — Display de 7 segmentos con DIP SW
-- [ ] Lab 4 — Algoritmos de ordenamiento
-- [ ] Lab 5 — Estructuras dinámicas y búsqueda binaria
-- [ ] Lab 6 — Stack y LIFO (proyecto)
-
----
-
 # Guía de instalación
 
 Antes de empezar hay que instalar 2 dependencias/JDK
 
 1. **Thonny** — para programar el ESP32 en MicroPython
 2. **Java (JDK) + jSerialComm** — para programar la aplicación que lee/envía los datos.
-
 ---
 
 ## Parte 1 — Thonny y el ESP32
