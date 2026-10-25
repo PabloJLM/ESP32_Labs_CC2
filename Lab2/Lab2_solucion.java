@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 
 public class Lab2_solucion {
 
-    private static final int NUM_LECTURAS = 10;
+    private static final int NUM_LECTURAS = 25;
 
     public static void main(String[] args) throws IOException {
 

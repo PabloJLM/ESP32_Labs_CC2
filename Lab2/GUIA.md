@@ -8,7 +8,7 @@ final calcular mínimo, máximo y promedio con un solo recorrido del arreglo.
 
 ## Archivos
 
-- `Fw_real.py` — firmware con el sensor físico (POT o LDR)
+- `main.py` — firmware con el sensor físico (POT o LDR)
 - `Fw_random.py` — firmware de prueba sin hardware
 - `Lab2_enunciado.java`
 - `Lab2_solucion.java`
@@ -19,10 +19,15 @@ final calcular mínimo, máximo y promedio con un solo recorrido del arreglo.
 [ESP32: lee ADC] -->(manda por serial la lectura de 0-4095)--> [Java arreglo estático, min/max/prom]
 ```
 
+> **Importante:** guarda `main.py` directo en el ESP32 (Thonny: Archivo →
+> Guardar como... → MicroPython device → `main.py`), no solo le des Run.
+> Así corre solo cada vez que enciendes o reseteas la placa, sin Thonny
+> abierto.
+
 ## Hardware
 
 - Potenciómetro en pin **34** o LDR en pin **35** (elige con la constante
-  `SENSOR` en `Fw_real.py`).
+  `SENSOR` en `main.py`).
 - Con `Fw_random.py` no hace falta cablear nada.
 
 ## Protocolo

@@ -1,7 +1,7 @@
 from machine import Pin, ADC
 import time
 
-SENSOR = "LDR"  # "POT" o "LDR"
+SENSOR = "POT"  # "POT" o "LDR"
 PIN_POT = 15	
 PIN_LDR = 35
 
