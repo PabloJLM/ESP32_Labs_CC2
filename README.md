@@ -29,7 +29,7 @@ entrega)
 ```
 LabN/
 ├── GUIA.md              - instrucciones
-├── firmware_esp32.py    - firmware del ESP32
+├── main.py    - firmware del ESP32
 ├── LabN_enunciado.java  - Base
 └── LabN_solucion.java   - soluciion solo para entregas mias 
 ```
