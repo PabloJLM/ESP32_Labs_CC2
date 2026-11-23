@@ -1,43 +1,52 @@
 # Ciencias de la Computación II — Labs con Welcome Kit
 
-Son laboratorios independientes para el curso de CC2, integrando hardware
-y software con ESP32 y Welcome Kit para el hardware y
-Java para la lógica y visualización.
+Laboratorios independientes de CC2 que combinan hardware (ESP32 + Welcome Kit)
+con Java para la lógica y la visualización. Cada uno tiene su propio circuito
+y su propia entrega.
 
-Cada laboratorio es **independiente** 
+## Labs
 
-| Lab | Tema Java | Estructura de datos | Hardware |
-|-----|-----------|---------------------|----------|
-| 1 | [LEDs RGB](https://www.instructables.com/Neopixels-How-Do-They-Work/) con un Array | Arreglo de tamaño fijo | Neopixel |
-| 2 | Estadísticas de un [sensor analógico](https://solectroshop.com/es/blog/que-son-los-sensores-analogicos-todo-sobre-su-funcionamiento-n91) (mínimo, máximo y promedio) | Arreglo estático | Potenciómetro, LM35 o LDR |
-| 3 | [Display de 7 segmentos](https://es.wikipedia.org/wiki/Visualizador_de_siete_segmentos) con DIP Switch | Matriz | DIP switch de 4 bits y display de 7 segmentos |
-| 4 | Algoritmos de ordenamiento [Bubble vs Insertion](https://www.youtube.com/shorts/FVGezEtSku4?feature=share) | Lista | Dos sensores analógicos |
-| 5 | Estructuras dinámicas y [búsqueda binaria](https://algomaster.io/animations/dsa-concepts/binary-search) | Lista enlazada | LDR |
-| 6 | Stack y LIFO ([Etch A Sketch](https://en.wikipedia.org/wiki/Etch_A_Sketch)) | Pila | Joystick o dos potenciómetros |
+| Lab | Tema | Estructura de datos | Hardware |
+|-----|------|---------------------|----------|
+| 1 | [LEDs RGB](https://www.instructables.com/Neopixels-How-Do-They-Work/) | Arreglo fijo | Neopixel |
+| 2 | Estadísticas de un [sensor analógico](https://solectroshop.com/es/blog/que-son-los-sensores-analogicos-todo-sobre-su-funcionamiento-n91) | Arreglo estático | Potenciómetro, LM35 o LDR |
+| 3 | [Display de 7 segmentos](https://es.wikipedia.org/wiki/Visualizador_de_siete_segmentos) | Matriz | DIP switch y display |
+| 4 | [Bubble vs Insertion sort](https://www.youtube.com/shorts/FVGezEtSku4?feature=share) | Lista | 2 sensores analógicos |
+| 5 | [Búsqueda binaria](https://algomaster.io/animations/dsa-concepts/binary-search) | Lista enlazada | LDR |
+
+## Proyectos
+
+
+| Proyecto | Tema | Estructura de datos | Hardware |
+|----------|------|---------------------|----------|
+| Lab6 | [Etch A Sketch](https://en.wikipedia.org/wiki/Etch_A_Sketch) con deshacer | Pila (Stack) | Joystick o 2 potenciómetros |
+| Proyecto | Adivina el animal (guarda y aprende) | Árbol binario | Potenciómetro, botón y neopixel |
 
 **Notas:**
 
-- Lab 1 es el único donde el flujo va Java hacia ESP32, en los demás labs el ESP32 lee el sensor y envía
-  los datos a Java.
+- **Lab 1:** el flujo va de Java al ESP32. En los demás, el ESP32 lee el
+  sensor y manda los datos a Java.
+- **Lab 3:** Java calcula los segmentos a partir del DIP switch y se los
+  devuelve al ESP32.
+- **Adivina el animal:** el estudiante arma el árbol de animales (empezando por
+  "Es mamifero?"). Ver [`Proyecto/GUIA.md`](Proyecto/GUIA.md).
 
-- Lab 3: el ESP32 envía el valor del DIP switch, Java calcula la
-  combinación de segmentos y se la devuelve al ESP32 (o al display)  aun pendiente de preguntar xd 
-
-## Estructura de carpetas de cada lab
+## Carpetas
 
 ```
-LabN/
-├── GUIA.md              - instrucciones
-├── main.py    - firmware del ESP32
-├── LabN_enunciado.java  - Base
-└── LabN_solucion.java   - soluciion solo para entregas mias 
+LabN/  (y Proyecto/)
+├── GUIA.md               instrucciones
+├── main.py               firmware del ESP32
+├── Fw_random.py          prueba sin hardware (no existe en el Lab 1)
+├── LabN_enunciado.java   base para el estudiante
+└── LabN_solucion.java    solución (para el instructor)
 ```
 
-## Conexiones fijas usadas en el shield Welcome Kit
+## Datos comunes
 
-- **Neopixel:** pin **25**
-- Pines analógicos de sensores: se indican en la guía de cada lab 
-- Todos los scripts corren a **115200 baudios**.
+- Neopixel en el pin **25**.
+- Los pines de cada sensor están en la `GUIA.md` de cada lab.
+- Todos los scripts usan **115200 baudios**.
 
 # Guía de instalación
 
