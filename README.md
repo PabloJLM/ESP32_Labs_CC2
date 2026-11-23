@@ -1,11 +1,10 @@
 # Ciencias de la Computación II — Labs con Welcome Kit
 
-Son 6 laboratorios independientes para el curso de CC2, integrando hardware
+Son laboratorios independientes para el curso de CC2, integrando hardware
 y software con ESP32 y Welcome Kit para el hardware y
 Java para la lógica y visualización.
 
-Cada laboratorio es **independiente** (su propio circuito y su propia
-entrega)
+Cada laboratorio es **independiente** 
 
 | Lab | Tema Java | Estructura de datos | Hardware |
 |-----|-----------|---------------------|----------|

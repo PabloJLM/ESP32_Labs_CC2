@@ -1,0 +1,19 @@
+P|Es mamifero?
+P|Vive en el agua?
+A|Delfin
+P|Come carne?
+P|Tiene melena?
+A|Leon
+A|Perro
+P|Tiene cuernos?
+A|Vaca
+A|Caballo
+P|Tiene plumas?
+P|Vuela?
+A|Aguila
+A|Pinguino
+P|Vive en el agua?
+A|Tiburon
+P|Tiene patas?
+A|Lagarto
+A|Serpiente
