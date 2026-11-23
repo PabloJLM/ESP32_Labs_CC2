@@ -26,10 +26,12 @@ quitando el último punto apilado.
 ## Hardware
 
 - Potenciómetro X en pin **34**, potenciómetro Y en pin **35**.
-- Botón en pin **18**, conectado a GND (pull-up interno, presionado = LOW).
-- El ESP32 manda continuamente `"x,y"` con las lecturas crudas (0-4095).
-  Cuando detecta que el botón pasó de no presionado a presionado, manda
-  una línea `"UNDO"` en vez de las coordenadas.
+- Botón en pin **19**, conectado a GND (pull-up interno, presionado = LOW).
+- El ESP32 manda `"x,y"` con las lecturas crudas (0-4095) solo cuando
+  algún potenciómetro se movió lo suficiente (filtra el ruido del ADC, si no
+  la pila se llenaría de puntos repetidos y el `UNDO` no se notaría).
+  Mientras el botón esté presionado manda `"UNDO"` repetido (cada ~150 ms),
+  así se puede ir borrando el trazo manteniéndolo apretado.
 - Con `Fw_random.py` no hace falta cablear nada (también simula el `UNDO`
   de vez en cuando).
 
